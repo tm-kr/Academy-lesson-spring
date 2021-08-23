@@ -17,13 +17,9 @@ public class Main {
 		System.out.print("두 번째 수 입력: ");
 		int n2 = sc.nextInt();
 		
-		GenericXmlApplicationContext ctx =
-				new GenericXmlApplicationContext("classpath:appctx.xml");
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:appctx.xml");
 		
 		Calculator op = ctx.getBean("operator", Calculator.class);
-		op.setOperator(operator);
-		op.setNum1(n1);
-		op.setNum2(n2);
 		
 		System.out.println(n1 + " " + operator + " " + n2 + " = " + op.calc(operator, n1, n2));
 	}
