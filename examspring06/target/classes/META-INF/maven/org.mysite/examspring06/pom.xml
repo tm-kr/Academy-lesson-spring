@@ -3,18 +3,27 @@
   <groupId>org.mysite</groupId>
   <artifactId>examspring06</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <!-- 설정파일에서 사용할 속성을 사용자가 정의하는 부분 -->
+
   <properties>
   	<java-version>1.8</java-version>
   	<springframework-version>4.3.25.RELEASE</springframework-version>
   </properties>
   
-  <!-- 의존 라이브러리 설정하는 부분 -->
   <dependencies>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-context</artifactId>
   		<version>${springframework-version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-aop</artifactId>
+  		<version>${springframework-version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.aspectj</groupId>
+  		<artifactId>aspectjweaver</artifactId>
+  		<version>1.8.13</version>
   	</dependency>
   </dependencies>
   
