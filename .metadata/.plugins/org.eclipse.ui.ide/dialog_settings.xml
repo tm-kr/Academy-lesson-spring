@@ -8,6 +8,7 @@
 		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
+<<<<<<< HEAD
 	<section name="NewWizardAction">
 	</section>
 	<section name="ExternalProjectImportWizard">
@@ -19,6 +20,19 @@
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value="C:\Users\user\Documents\카카오톡 받은 파일\calc.zip"/>
+=======
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\USER\Desktop\자바\spring"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+>>>>>>> a9e88db9c646097442c566f860330fa577098300
 		</list>
 	</section>
 </section>
