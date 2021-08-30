@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="spring.MemberRegisterService"/>
+<fullyQualifiedTypeName name="spring.ChangePasswordService"/>
+<fullyQualifiedTypeName name="assembler.Assembler"/>
+<fullyQualifiedTypeName name="spring.RegisterRequest"/>
+<fullyQualifiedTypeName name="spring.AlreadyExistingMemberException"/>
+<fullyQualifiedTypeName name="spring.IdPasswordNotMatchingException"/>
+<fullyQualifiedTypeName name="spring.MemberNotFoundException"/>
+</qualifiedTypeNameHistroy>
