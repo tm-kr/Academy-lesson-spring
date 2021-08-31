@@ -13,7 +13,7 @@ public class CommonPerson implements Person{
 	public int usingComputer(String pwd) {
 		System.out.println("컴퓨터 부팅 후 " + pwd + "를 입력하여 로그인");
 		int result = person.usingComputer(pwd); //핵심 기능 호출!
-		System.out.println("컴퓨터 종료");
+		System.out.println("컴퓨터 종료22");
 		return result;
 	}
 
