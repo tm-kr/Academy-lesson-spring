@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:annotation-config/>
+	
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass" value="oracle.jdbc.OracleDriver"/>
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+		<property name="user" value="springtester"/>
+		<property name="password" value="1234"/>
+		
+		<!-- 커넥션 풀에 관련된 설정 -->
+		<property name="maxPoolSize" value="100"/>
+		<property name="maxIdleTime" value="600"/>
+		<property name="idleConnectionTestPeriod" value="300"/>
+		
+	</bean>
+	
+	<bean id="memberDao" class="spring.MemberDao"></bean>
+	
+	<bean id="memberRegSvc" class="spring.MemberRegisterService"></bean>
+	
+	<bean id="changePwdSvc" class="spring.ChangePasswordService"></bean>
+	
+	<bean id="memberPrinter" class="spring.MemberPrinter"></bean>
+	
+	<bean id="memberListPrinter" class="spring.MemberListPrinter"></bean>
+	
+	<bean id="memberInfoPrinter" class="spring.MemberInfoPrinter"></bean>
+	
+	<bean id="versionPrinter" class="spring.VersionPrinter">
+		<property name="majorVersion" value="1"/>
+		<property name="minorVersion" value="0"/>
+	</bean>
+	
+</beans>
+
+
+
+
+
+
