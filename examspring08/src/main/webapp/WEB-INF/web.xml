@@ -10,6 +10,7 @@
   		<param-value>
   			classpath:spring-mvc.xml
   			classpath:spring-controller.xml
+  			classpath:spring-member.xml
   		</param-value>
   	</init-param>
   </servlet>

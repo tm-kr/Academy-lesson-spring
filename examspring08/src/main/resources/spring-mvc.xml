@@ -17,6 +17,8 @@
 	<!-- MVC관련 어노테이션 처리 -->
 	<mvc:annotation-driven/> 
 	
+	<mvc:view-controller path="/main" view-name="main"/>
+	
 	<mvc:view-resolvers>
 		<mvc:jsp prefix="/WEB-INF/views/" suffix=".jsp"/>
 	</mvc:view-resolvers>
