@@ -13,6 +13,10 @@
   
 	<bean class="controller.HelloController"></bean>
 	
+	<bean class="controller.RegisterController">
+		<property name="memberRegisterService" ref="memberRegSvc"/>
+	</bean>
+	
 </beans>
 
 

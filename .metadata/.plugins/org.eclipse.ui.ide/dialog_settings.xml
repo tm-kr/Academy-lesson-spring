@@ -12,7 +12,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+<<<<<<< HEAD
 			<item value="C:\Users\USER\Desktop\자바\Academy-lesson-spring"/>
+=======
+			<item value="C:\Users\user\Desktop\오후 취업반\Academy-lesson-spring"/>
+>>>>>>> dee2a0f64c6d8db4680b27b2a2528c6af4f339be
 		</list>
 	</section>
 </section>
