@@ -37,4 +37,7 @@
 <fullyQualifiedTypeName name="org.springframework.cglib.proxy.MethodInterceptor"/>
 <fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
 <fullyQualifiedTypeName name="org.springframework.aop.MethodBeforeAdvice"/>
+<fullyQualifiedTypeName name="org.springframework.aop.AfterReturningAdvice"/>
+<fullyQualifiedTypeName name="org.springframework.aop.ThrowsAdvice"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 </qualifiedTypeNameHistroy>

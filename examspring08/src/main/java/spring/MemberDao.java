@@ -2,13 +2,16 @@ package spring;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 
@@ -95,14 +98,14 @@ public class MemberDao {
 	
 	
 	public void insert(Member member){ //insert
-		//KeyHolder keyHolder = new GeneratedKeyHolder();
+		KeyHolder keyHolder = new GeneratedKeyHolder();
 		String query = "insert into \"MEMBER\" (\"ID\", \"EMAIL\", \"PASSWORD\", \"NAME\", \"REGDATE\")"
 				+ " values (\"MEMBER_SEQ\".nextval, ?, ?, ?, sysdate)";
 		jdbcTemplate.update(new PreparedStatementCreator() {
 
 			@Override
 			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
-				PreparedStatement pstmt = con.prepareStatement(query/* , new String[] {"ID"} */);
+				PreparedStatement pstmt = con.prepareStatement(query, new String[] {"ID"});
 				pstmt.setString(1, member.getEmail());
 				pstmt.setString(2, member.getPassword());
 				pstmt.setString(3, member.getName());
@@ -110,15 +113,28 @@ public class MemberDao {
 				return pstmt;
 			}
 			
-		}/* , keyHolder */); //prepareStatement에 전달한 String배열에 해당하는 컬럼에 사용된 값을 키홀더에 저장
-		//Number key = keyHolder.getKey();
-		//member.setId(key.longValue());
-		member.setId(this.lastSequence());
+		}, keyHolder); //prepareStatement에 전달한 String배열에 해당하는 컬럼에 사용된 값을 키홀더에 저장
+		Number key = keyHolder.getKey();
+		member.setId(key.longValue());
 	}
 	
-	public long lastSequence() {
-		String sql = "select max(\"ID\") from \"MEMBER\"";
-		return jdbcTemplate.queryForObject(sql, Long.class);
+	public List<Member> selectByRegdate(Date from, Date to){ //java.util.Date
+		List<Member> results = jdbcTemplate.query(
+				"select * from \"MEMBER\" where \"REGDATE\" between ? and ? order by \"REGDATE\" desc",
+				new MemberRowMapper(), 
+				from,
+				to);
+		return results;
+	}
+
+	public Member selectById(Long id) {
+		List<Member> results = 
+				jdbcTemplate.query(
+						"select * from \"MEMBER\" where \"ID\" = ?", 
+						new MemberRowMapper(),
+						id);
+				
+		return results.isEmpty() ? null : results.get(0);
 	}
 		
 }
