@@ -28,6 +28,6 @@
 			</c:forEach>
 		</table>
 		
-		<a href="<c:url value="/board/writer"/>">새글</a>
+		<a href="<c:url value="/board/write"/>">새글</a>
 </body>
 </html>

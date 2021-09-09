@@ -9,7 +9,7 @@
 		ORDER BY seq
 	</select>
 	
-	<select id="selectByEmail" parameterType="int" resultType="boardVO">
+	<select id="select" parameterType="int" resultType="boardVO">
 		SELECT * FROM
 		BOARD WHERE seq = #{seq}
 	</select>
