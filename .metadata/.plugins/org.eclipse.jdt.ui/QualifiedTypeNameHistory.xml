@@ -40,4 +40,10 @@
 <fullyQualifiedTypeName name="org.springframework.aop.AfterReturningAdvice"/>
 <fullyQualifiedTypeName name="org.springframework.aop.ThrowsAdvice"/>
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.Length"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotEmpty"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="javax.validation.Valid"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.SessionAttributes"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.support.SessionStatus"/>
 </qualifiedTypeNameHistroy>
