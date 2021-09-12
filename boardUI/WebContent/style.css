@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  height: 65px;
+  color: white;
+  background: #fc00ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header2{
+	text-align:center;
+	margin : auto;
+	width: 1044px;
+}
+
+body{
+	background: #ebeef1;
+}
+
+.container{
+	text-align: center;
+}
+.content{
+	margin:auto;
+	margin-top : 140px;
+	width: 1044px;
+	height: 800px;
+	background: ebeef1;
+}
+
+.contentL{
+	float : left;
+}
+.search{
+	width : 719px;
+	height: 100px;
+	background: white;
+}
+.list{
+	margin-top : 25px;
+	width : 719px;
+	height: 675px;
+	background: white;
+}
+.profile{
+	float : right;
+	height: 500px;
+	width : 300px;
+	background: white;
+}
