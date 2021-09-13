@@ -10,18 +10,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="header">
+	<div class="header shadow">
 		<div class="header2">
-			<h3 style="float: left">Simple board</h3>
+			<h3 style="float: left"><a href="#" style="color: white">Simple board</a></h3>
 			<button style="float: right" type="button" class="btn btn-outline-light">로그인</button>
 		</div>
 		
 	</div>
 	
 	<div class="container">
-		<div class="content">
+		<div class="content ">
 			<div class="contentL">
-				<div class="search">
+				<div class="search shadow-sm">
 					<div class="search-top">
 						<h2 style="float: left">전체</h2>
 						<div style="float: right"> <img alt="" src="img/write.jpg"> </div>
@@ -37,7 +37,10 @@
 					  
 					
 				</div>
-				<div class="list">
+				<div class="list shadow-sm">
+				
+		
+				
 					<a href="#">
 					<div class="list-card ">
 							<div class="card">
@@ -127,7 +130,7 @@
 			</div>
 			
 		
-			<div class="profile">
+			<div class="profile shadow-sm">
 				 <div class="d-grid gap-2 profile-top">
 				   <button class="btn btn-info" type="button">로그인</button>
 				   <button class="btn btn-info" type="button">회원가입</button>

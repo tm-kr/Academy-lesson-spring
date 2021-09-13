@@ -10,9 +10,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="header">
-		<div class="header2">
-			<h3 style="float: left">Simple board</h3>
+	<div class="header shadow">
+		<div class="header2 ">
+			<h3 style="float: left"><a href="#" style="color: white">Simple board</a></h3>
 			<button style="float: right" type="button" class="btn btn-outline-light">로그인</button>
 		</div>
 		
@@ -21,7 +21,7 @@
 	<div class="container">
 		<div class="content2">
 		
-			<div class="contentL">
+			<div class="contentL shadow-sm">
 				<div>
 					<form method="post" action="${pageContext.request.contextPath}/upload" enctype="multipart/form-data">
 						<div class="write">
@@ -42,7 +42,7 @@
 				
 			
 		
-			<div class="profile">
+			<div class="profile shadow-sm">
 				 <div class="d-grid gap-2 profile-top">
 				   <button class="btn btn-info" type="button">로그인</button>
 				   <button class="btn btn-info" type="button">회원가입</button>

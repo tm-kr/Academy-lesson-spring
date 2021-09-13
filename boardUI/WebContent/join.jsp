@@ -24,13 +24,23 @@
 				<h2 class="mb-3"><b>Simple board</b></h2>
 			</div>
 			<form method="post" action="${pageContext.request.contextPath}/login">
-				<input type="text" class="form-control" placeholder="아이디" name="id" ><br>
-				<input type="password" class="form-control mb-5" placeholder="비밀번호" name="pass">
-				<div class=" mb-3">
-					<button type="submit" class="btn btn-primary mb-3" onclick="location.href='${pageContext.request.contextPath}/login'">로그인</button>
+				<div class="join">
+					<label><b>아이디</b></label>
+					<input type="text" class="form-control" name="id" ><br>
+					<label><b>비밀번호</b></label>
+					<input type="password" class="form-control" name="pass"><br>
+					<label><b>이름</b></label>
+					<input type="text" class="form-control" name="name" ><br>
+					<label><b>이메일</b></label>
+					<input type="text" class="form-control mb-5" name="email" >
+				</div>
+				<div class=" d-grid gap-2 mb-3">
+					<button type="submit" class="btn btn-primary mb-5" onclick="location.href='${pageContext.request.contextPath}/login'">회원가입</button>
 				</div>
 			</form>
-			<h6>아이디가 없으신가요? <a href="#">회원가입하기</a></h6>
+			<footer class="mt-3 mb-5">
+				<br>Copyright &copy; 2021 TaeMin<br>All Rights Reserved.
+			</footer>
 		</div>
 	</div>
 	

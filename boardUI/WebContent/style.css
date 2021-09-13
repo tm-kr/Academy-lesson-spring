@@ -94,7 +94,7 @@ body{
 a{
 	text-decoration-line: none;
 }
-.pagination {
+.pagination {	
    justify-content: center;
 }
 .content-read{
@@ -136,6 +136,9 @@ textarea{
 	left: 50%;
 	width: 450px; height: 450px;
 	margin-left: -220px;
-	margin-top: -350px;
+	margin-top: -390px;
 	text-align: center;
+}
+.join{
+	text-align: left;
 }
