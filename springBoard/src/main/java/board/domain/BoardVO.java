@@ -32,7 +32,6 @@ public class BoardVO {
 		this.content = content;
 		this.writer = writer;
 		this.password = password;
-		this.cnt = 0;
 	}
 
 	public int getSeq() {
